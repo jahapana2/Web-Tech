@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lost Item Report</title>
+</head>
+<body>
+  <H1>CAMPUS LOST ITEM REPORT</H1>
+  
+  <FIEldset>
+    <CENTER>
+      <LEGEND><B>REPORT LOST ITEM</B></LEGEND><br>
+     <form action="#" method="post">
+    <LABel for="name">Full Name:</LABel>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required></LABel><br><br>
+
+    <LABel for="item">Category:</LABel>
+    <select id="item" name="item">
+      <option value="electronics">Electronics</option>
+      <option value="clothing">Clothing</option>
+      <option value="accessories">Accessories</option>
+      <option value="documents">Documents</option>
+      <option value="others">Others</option>
+    </select><br><br>
+
+
+    <LABel for="description">Description:</LABel><BR>
+    <textarea id="description" name="description" rows="4" cols="50" placeholder="Provide a detailed description of the lost item..." required></textarea><br><br>
+
+
+    <LABel for="date">Date Lost:</LABel>
+    <input type="date" id="date" name="date" required><br><br>
+    <LABel for="location">Location Lost:</LABel>
+    <input type="text" id="location" name="location" placeholder="Enter the location where the item was lost" required><br><br>
+
+
+    <LABel for="time">Time Lost:</LABel>
+    <input type="time" id="time" name="time" required><br><br>
+
+
+    <LABel for="contact">Contact Information:</LABel><BR>
+    <input type="text" id="contact" name="contact" placeholder="Enter your contact information" required><br><br>
+
+
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset"> 
+    </CENTER> 
+     </form>  
+  </FIEldset>
+</body>
+</html>
