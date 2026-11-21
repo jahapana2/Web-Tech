@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Lost and Found Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <h2 class="logo">Campus Lost &amp; Found Hub</h2>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Lost Items</a>
+            <a href="#">Found Items</a>
+            <a href="#">Report Item</a>
+            <a href="#">My Reports</a>
+            <a href="#">Profile</a>
+        </nav>
+        <span>User Name</span>
+    </header>
+
+    <main class="container">
+
+        <!-- Tab buttons -->
+        <div class="tabs">
+            <button id="lostTab" class="tab active">Lost Item</button>
+            <button id="foundTab" class="tab">Found Item</button>
+        </div>
+
+        <!-- Lost Item Form -->
+        <form id="lostForm" class="card">
+            <h2>Report Lost Item</h2>
+
+            <label for="lName">Item Name</label>
+            <input type="text" id="lName">
+            <span class="error"></span>
+
+            <label for="lCategory">Category</label>
+            <select id="lCategory">
+                <option value="">Select a Category</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Books">Books</option>
+                <option value="ID Card">ID Card</option>
+                <option value="Bag">Bag</option>
+                <option value="Others">Others</option>
+            </select>
+            <span class="error"></span>
+
+            <label for="lDesc">Description</label>
+            <textarea id="lDesc" rows="3"></textarea>
+
+            <label for="lLocation">Lost Location</label>
+            <input type="text" id="lLocation">
+            <span class="error"></span>
+
+            <label for="lDate">Lost Date</label>
+            <input type="date" id="lDate">
+            <span class="error"></span>
+
+            <label for="lTime">Approximate Time</label>
+            <select id="lTime">
+                <option value="">Time</option>
+                <option value="Morning">Morning</option>
+                <option value="Afternoon">Afternoon</option>
+                <option value="Evening">Evening</option>
+                <option value="Night">Night</option>
+            </select>
+
+            <label for="lImage">Upload Image</label>
+            <input type="file" id="lImage">
+
+            <label for="lInfo">Additional Information</label>
+            <textarea id="lInfo" rows="2"></textarea>
+
+            <button type="submit" class="submit">Submit Report</button>
+        </form>
+
+        <!-- Found Item Form -->
+        <form id="foundForm" class="card">
+            <h2>Report Found Item</h2>
+
+            <label for="fName">Item Name</label>
+            <input type="text" id="fName">
+            <span class="error"></span>
+
+            <label for="fCategory">Category</label>
+            <select id="fCategory">
+                <option value="">Select a Category</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Books">Books</option>
+                <option value="ID Card">ID Card</option>
+                <option value="Bag">Bag</option>
+                <option value="Others">Others</option>
+            </select>
+            <span class="error"></span>
+
+            <label for="fKept">Where is the item currently kept?</label>
+            <input type="text" id="fKept">
+            <span class="error"></span>
+
+            <label for="fDate">Found Date</label>
+            <input type="date" id="fDate">
+            <span class="error"></span>
+
+            <button type="submit" class="submit">Submit Report</button>
+        </form>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
